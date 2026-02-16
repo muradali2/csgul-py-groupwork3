@@ -1,0 +1,8 @@
+"policy.number","field","error.type","message"
+"P1002541","age.at.inception","age_out_of_range","Too old/young at inception: age.at.inception must be between 65 and 75"
+"P1002541","term","term_too_long","Term too long as it takes them beyond 90"
+"P1002556","term","term_too_long","Term too long as it takes them beyond 90"
+"P1002682","smoker.status","invalid_value","The smoking status is not valid (allowed: Non-smoker, Smoker, Ex-smoker)"
+"P1002784","year.of.exit","exit_in_asof_year_or_later","Can't have an exit in 2026 or later (file created on 01/01/26)"
+"P1002876","year.of.exit","end_year_mismatch","Can't have come to the end of the policy (exit='End') because year.of.exit doesn't match inception.year + term - 1"
+"P1002912","inception.year","future_inception","As data is from 2026, cannot have a policy incepting after 2026"
