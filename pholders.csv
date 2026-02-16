@@ -1,7 +1,0 @@
-policy.number,first.name,surname,inception.year,age.at.inception,premium,sum.assured,term,sex,smoker.status,exit,year.of.exit
-P1002541,Hugh,Jackman,2014,68,10840.77904,100000,10,Male,Smoker,End,2023
-P1002556,Brad,Pitt,2016,72,16159.29118,150000,15,Male,Non-smoker,Withdrawl,2019
-P1002682,George,Clooney,2019,71,18725.13,125000,10,Male,Ex-smoker,,
-P1002784,Nicole,Kidman,2022,74,20152.13,140000,15,Female,Non-smoker,Death,2024
-P1002876,Mariska,Hargitay,2023,70,18157.32,150000,10,Female,Smoker,Withdrawl,2025
-P1002912,Scarlett,Johansson,2026,70,16521.56,145000,10,Female,Ex-smoker,,
