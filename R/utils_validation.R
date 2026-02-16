@@ -15,3 +15,9 @@ assert_has_cols <- function(df, cols) {
 end_year_vec <- function(df) {
   df[["inception.year"]] + df[["term"]] - 1
 }
+
+is_active_start <- function(df, year) {
+  in_force <- !is.na(df[["inception.year"]]) & df[["inception.year"]] <= year
+  not_exited_before <- is.na(df[["year.of.exit"]]) | df[["year.of.exit"]] >= year
+  in_force & not_exited_before
+}
