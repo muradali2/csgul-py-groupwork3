@@ -5,7 +5,18 @@ PH_COLS <- c(
   "premium","sum.assured","term","sex","smoker.status","exit","year.of.exit"
 )
 
+resolve_path <- function(path) {
+  if (file.exists(path)) return(path)
+
+  alt <- file.path("data", path)
+  if (file.exists(alt)) return(alt)
+
+  stop(sprintf("File not found: '%s' (also tried '%s')", path, alt), call. = FALSE)
+}
+
 read_pholders <- function(path) {
+  path <- resolve_path(path)
+
   df <- read.csv(
     path,
     stringsAsFactors = FALSE,
@@ -30,6 +41,11 @@ read_pholders <- function(path) {
   }
 
   df
+}
+
+write_pholders <- function(df, path) {
+  write.csv(df, path, row.names = FALSE, na = "")
+  invisible(TRUE)
 }
 
 write_csv_nice <- function(df, path) {
